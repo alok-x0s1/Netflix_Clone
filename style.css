@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 12%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.language-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content {
+    margin: 190px auto auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.header-content h3 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header-content p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: 24px;
+}
+
+.sign-btn {
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+
+.sign-btn input {
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1rem 12rem .5rem 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.sign-btn button {
+    height: 100%;
+    padding: 1rem 2.5rem 1rem 1rem;
+    border-radius: 4px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(104, 96, 96, 0.546);
+}
+
+.features {
+    font-size: 22px;
+}
+
+.f-row{
+    padding: 50px 12%;}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-top: 20px;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    /* max-width: 750px; */
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    height: 81px;
+}
+
+label::after {
+    content: '+';
+    font-size: 44px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.footer {
+    padding: 50px 12% 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer .language-btn {
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.footer p {
+    margin: 20px 0 40px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+    nav button {
+        padding: 5px 10px;
+    }
+    nav .language-btn {
+        padding: 4px 8px;
+    }
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .sign-btn button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col, .img-col {
+        flex-basis: 100%;
+    }
+    .features h2 {
+        font-size: 30px;
+    }
+    .features p {
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .features .row {
+        padding: 10px 0;
+    }
+    .faq {
+        font-size: 20px;
+    }
+    .accordion .content {
+        font-size: 14px;
+    }
+    .accordion li .label {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .label::after {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .header-content {
+        margin-top: 160px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sign-btn button {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
